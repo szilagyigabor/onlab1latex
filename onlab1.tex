@@ -1,0 +1,208 @@
+\documentclass[12pt,a4paper,oneside]{report}
+% nagyon sok kép esetén meggyorsítható a fordítás a draft móddal
+% \documentclass[12pt,a4paper,oneside,draft]{report}
+% ekkor a képek nem renderelődnek ki, csak placeholder lesz mérethelyesen
+\usepackage[utf8]{inputenc} % mindenképp maradjon az utf-8 kódolás
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} % grafikus elemek, képek berakásához
+%\usepackage{epsfig} % eps importáláshoz
+\usepackage{listings}
+\usepackage{sectsty}
+%\usepackage{enumerate}
+\usepackage{siunitx} % ezzel lehet hivatalosan megformázni: szám + mértékegység
+%\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{hyperref} % PDF hivatkozásokhoz kell
+\usepackage[hang]{caption}
+\usepackage{titling} % a title, author parancsok szabad használatához
+\usepackage{xcolor}
+
+
+
+% a TikZ rajzoló modul, és a kapcsolási rajz készítő modul, ha kell
+%\usepackage{tikz}
+%\usepackage{circuitikz}
+
+%\pagenumbering{gobble}
+
+\definecolor{rosewood}{rgb}{0.6, 0.0, 0.04}
+\definecolor{indigo(dye)}{rgb}{0.0, 0.25, 0.42}
+
+\lstset{
+	basicstyle=\scriptsize\ttfamily, % print whole listing small
+	keywordstyle=\color{black}\bfseries, % bold black keywords
+	identifierstyle=, % nothing happens
+	% default behavior: comments in italic, to change use
+	% commentstyle=\color{green}, % for e.g. green comments
+	stringstyle=\scriptsize,
+	showstringspaces=false, % no special string spaces
+	aboveskip=3pt,
+	belowskip=3pt,
+	backgroundcolor=\color{lightgray},
+	columns=flexible,
+	keepspaces=true,
+	escapeinside={(*@}{@*)},
+	captionpos=b,
+	breaklines=true,
+	frame=single,
+	float=!ht,
+	tabsize=2,
+	literate=*
+		{á}{{\'a}}1	{é}{{\'e}}1	{í}{{\'i}}1	{ó}{{\'o}}1	{ö}{{\"o}}1	{ő}{{\H{o}}}1	{ú}{{\'u}}1	{ü}{{\"u}}1	{ű}{{\H{u}}}1
+		{Á}{{\'A}}1	{É}{{\'E}}1	{Í}{{\'I}}1	{Ó}{{\'O}}1	{Ö}{{\"O}}1	{Ő}{{\H{O}}}1	{Ú}{{\'U}}1	{Ü}{{\"U}}1	{Ű}{{\H{U}}}1
+}
+
+% az A4 oldal margóinak és méreteinek beállítása
+\usepackage[left=25mm,right=25mm,top=20mm,bottom=25mm]{geometry}\pagestyle{plain}
+
+% A sorköz távolság beállítása
+% egyszeres sorköz
+\singlespacing
+% 1,5 sorköz
+% \onehalfspacing
+
+% A hivatkozások, és linkek átállítása alapértelmezett színre, fekete-fehér nyomtatáshoz optimalizálva
+\hypersetup
+{
+  	colorlinks,
+  	citecolor=blue,
+ 	linkcolor=rosewood,
+  	urlcolor=indigo(dye)
+}
+
+\sloppy % Margón túllógó sorok tiltása.
+\widowpenalty=10000 \clubpenalty=10000 %A fattyú- és árvasorok elkerülése
+
+\newcommand{\szerzo}{Szilágyi Gábor}
+\newcommand{\cim}{2,4 GHz-es nyomtattott BIFA tervezése és mérése}
+\newcommand{\tanszek}{Szélessávú Hírközlés és Villamosságtan Tanszék}
+\newcommand{\kar}{Villamosmérnöki és Informatikai Kar}
+\newcommand{\egyetem}{Budapesti Műszaki és Gazdaságtudományi Egyetem}
+\newcommand{\kulsokonzulens}{Bódi Tamás (Silicon Laboratories Hungary kft.)}
+\newcommand{\tanszekikonzulens}{Dr. Lénárt Ferenc}
+\newcommand{\dokumentumtipus}{Önálló Laboratórium 1 Dolgozat}
+
+
+% a dolgozat típusa
+\title{\dokumentumtipus}
+
+% a dolgozat szerzője
+\author{\szerzo}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\include{tartalom/cimlap.tex}
+	\pagenumbering{gobble}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	\include{tartalom/bevezetes.tex}
+\end{document}
+
+
+% A legendás siunitx package, ami a mértékegységek leírásának
+% leghivatalosabb módja, ezeket a makrókat definiálja:
+
+% használat: \SI[per-mode=symbol]{12345,678}{\kilo\amper\per\kandela\tothe{9}}
+% ilyesmi lesz, csak jobb: 12345.67\, kAcd^{-9}
+
+% egyszerűbb eset: \SI{50}{\ohm}
+
+
+%% SI alapegységek:
+% amper         -   \ampere
+% kandela       -   \candela
+% kelvin        -   \kelvin
+% kilogramm     -   \kilogram
+% méter         -   \metre  (!!)
+% mól           -   \mole
+% másodperc     -   \second
+
+%% Származtatott SI egységek:
+% becquerel     -   \becquerel
+% celziusz fok  -   \degreeCelsius
+% coulomb       -   \coulomb
+% farád         -   \farad
+% gray          -   \gray
+% hertz         -   \hertz
+% henry         -   \henry
+% joule         -   \joule
+% katal         -   \katal
+% lumen         -   \lumen
+% lux           -   \lux
+% newton        -   \newton
+% ohm           -   \ohm
+% pascal        -   \pascal
+% radián        -   \radian
+% siemens       -   \siemens
+% sievert       -   \sievert
+% szteradián    -   \steradian
+% tesla         -   \tesla
+% volt          -   \volt
+% watt          -   \watt
+% weber         -   \weber
+
+%% Elfogadott, nem SI mértékegységek
+% nap           -   \day
+% fok           -   \degree
+% hektár        -   \hectare
+% óra           -   \hour
+% liter         -   \litre ( vagy \liter, de az előző kis "l" lesz, az utóbbi nagy "L")
+% fokperc       -   \arcminute
+% perc          -   \minute
+% fokmásodperc  -   \arcsecond
+% tonna         -   \tonne
+
+%% Kísérleti úton megállapítható nem SI egységek:
+% csillagászati egység      -   \astronomicalunit
+% atomi tömegegység         -   \atomicmassunit
+% bohr                      -   \bohr
+% fénysebesség              -   \clight
+% dalton                    -   \dalton
+% elektrontömeg             -   \electronmass
+% elektronvolt              -   \electronvolt
+% egységtöltés              -   \elementarycharge
+% hartree                   -   \hartree
+% redukált planck állandó   -   \planckbar
+
+%% Más nem SI egységek:
+% ångström          -   \angstrom
+% bár               -   \bar
+% barn              -   \barn
+% bel               -   \bel
+% decibel           -   \decibel
+% csomó             -   \knot
+% higanymilliméter  -   \mmHg
+% tengeri csomó     -   \nauticalmile
+% neper             -   \neper
+
+%% Prefixek:
+% yocto-        -   \yocto  (-24)
+% zepto-        -   \zepto  (-21)
+% atto-         -   \atto   (-18)
+% femto-        -   \femto  (-15)
+% piko-         -   \pico   (-12)
+% nano-         -   \nano   (-9)
+% mikro-        -   \yocto  (-6)
+% milli         -   \milli  (-3)
+% centi-        -   \centi  (-2)
+% deci-         -   \deci   (-1)
+
+% deka-         -   \deca   (1)
+% hekto-        -   \hecto  (2)
+% kilo-         -   \kilo   (3)
+% mega-         -   \mega   (6)
+% giga-         -   \giga   (9)
+% tera-         -   \tera   (12)
+% peta-         -   \peta   (15)
+% exa-          -   \exa    (18)
+% zetta-        -   \zetta  (21)
+% yotta-        -   \yotta  (24)
