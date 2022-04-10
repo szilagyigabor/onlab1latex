@@ -20,8 +20,7 @@
 \usepackage[hang]{caption}
 \usepackage{titling} % a title, author parancsok szabad használatához
 \usepackage{xcolor}
-
-
+%\usepackage{bibtex}
 
 % a TikZ rajzoló modul, és a kapcsolási rajz készítő modul, ha kell
 %\usepackage{tikz}
@@ -64,7 +63,8 @@
 \singlespacing
 % 1,5 sorköz
 % \onehalfspacing
-
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
 % A hivatkozások, és linkek átállítása alapértelmezett színre, fekete-fehér nyomtatáshoz optimalizálva
 \hypersetup
 {
@@ -105,6 +105,9 @@
 	\newpage
 	\pagenumbering{arabic}
 	\include{tartalom/bevezetes.tex}
+	\newpage
+	\bibliographystyle{ieeetr}
+	\bibliography{tartalom/hivatkozasok.bib}
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
