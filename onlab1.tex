@@ -20,11 +20,13 @@
 \usepackage[hang]{caption}
 \usepackage{titling} % a title, author parancsok szabad használatához
 \usepackage{xcolor}
-%\usepackage{bibtex}
+\usepackage{pdfpages}
 
 % a TikZ rajzoló modul, és a kapcsolási rajz készítő modul, ha kell
 %\usepackage{tikz}
 %\usepackage{circuitikz}
+
+\bibliographystyle{ieeetr}
 
 %\pagenumbering{gobble}
 
@@ -57,6 +59,7 @@
 
 % az A4 oldal margóinak és méreteinek beállítása
 \usepackage[left=25mm,right=25mm,top=20mm,bottom=25mm]{geometry}\pagestyle{plain}
+
 
 % A sorköz távolság beállítása
 % egyszeres sorköz
@@ -101,12 +104,14 @@
 \begin{document}
 	\include{tartalom/cimlap.tex}
 	\pagenumbering{gobble}
+	\newpage
+	\includepdf[pages={1}]{tartalom/onlabtema.pdf}
+	\newpage
 	\tableofcontents
 	\newpage
 	\pagenumbering{arabic}
 	\include{tartalom/bevezetes.tex}
 	\newpage
-	\bibliographystyle{ieeetr}
 	\bibliography{tartalom/hivatkozasok.bib}
 \end{document}
 
