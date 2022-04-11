@@ -1,3 +1,4 @@
+set DOCUMENT=thesis.tex
 pdflatex --quiet %DOCUMENT%
 bibtex -quiet %DOCUMENT%
 pdflatex --quiet %DOCUMENT%
