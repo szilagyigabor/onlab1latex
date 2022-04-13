@@ -1,9 +1,6 @@
 #!/bin/bash
 pdflatex -interaction=nonstopmode -halt-on-error onlab1.tex
 
-bibtex onlab1
-pdflatex -interaction=nonstopmode -halt-on-error onlab1.tex
-pdflatex -interaction=nonstopmode -halt-on-error onlab1.tex
 
 echo Press enter to delete junk and continue...
 read var
