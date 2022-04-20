@@ -1,5 +1,14 @@
 \chapter{Bevezetés}
 Ebben a dolgozatban a BME VIK Villamosmérnök MSc képzés Önálló Laboratórium 1 c. tárgyának keretében végzett kutatási és tervezési munkámat összegzem. A dolgozatom témája egy kevéssé ismert nyomtatott antennatípus, a BIFA (Balanced Inverted F Antenna) tervezése.
+\section{Céges háttér}
+A BIFA tervezésének apropója az, hogy a Silicon Laboratories-nél kis méretű, körülbelül 3-szor 5 cm-es ,,radio board''-ok fejlesztésével is foglalkoznak, amelyek referencia implementációként szolgálnak a cég által termelt rádió IC-ket használó áramkörökhöz. Ezek alapján a Silabs ügyfelei (más cégek) már a végfelhasználóknak szánt rádiós eszközöket gyártanak. A radio boardok sokféle változatban készülnek, több frekvenciasávra, különböző rádiós protokollokat támogatnak, stb. Az egyik érintett frekvenciasáv a \SI{2,4}{GHz}-es ISM sáv, ahol például a Bluetooth protokoll is működik. A radio boardoknak többféle elrendezésben is helyt kell állniuk, sokuk egy nagyobb alaplaphoz (WSTK, Wireless Starter Kit Mainboard) csatlakoztatva rádiós kiegészítő kártyaként tud működni, de vannak olyanok is, amelyek önállóan elemről, vagy többféle módon is működtethetőek.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{kep/wstk-rb.jpg}
+	\caption{Egy radio board a képen nem látható IFA-val egy WSTK-hoz csatlakoztatva.}
+	\label{fig:wstk-rb}
+\end{figure}
+\par A radio boardok többségét WSTK-ra csatlakoztatva fejlesztik és tesztelik, de a végső vezetéknélküli termék már sok esetben a WSTK nélkül kerül felhasználásra. Ráadásul a radio board és a WSTK földkitöltése RF szempontból elég jól össze van kötve a 2 db 40 pines csatlakozó föld-pinjein keresztül, amikkel a két egység csatlakozik egymáshoz, ezért jogos a WSTK-t a monopól antenna szempontjából az alaplap kiterjesztéseként kezelni. Fontos tehát, hogy ne legyen lényeges különbség az antenna működésében a WSTK-t használó és az anélküli elrendezések között, innen az igény egy olyan antennára, ami érzéketlen a WSTK jelenlétére.
 \section{Antennák jellemzői, definíciók}
 	A különböző antennák összehasonlításának jó eszközei a következő paraméterek, amelyek segítségével több szempontból nyerhetünk betekintést az antennák működésébe.
 	\subsection{Iránykarakterisztika, irányhatás és nyereség}
@@ -32,7 +41,8 @@ Ebben a dolgozatban a BME VIK Villamosmérnök MSc képzés Önálló Laboratór
 		A $Q$ paraméter eredetileg diszkrét reaktáns alkatrészek jellemzésére lett bevezetve (tekercs, kondenzátor, rezgőkörök, stb.) \cite{story-of-q}. Míg reaktáns alkatrészeknél (tekercs, kondenzátor, rezonátorok, stb.) a nagyobb $Q$ jelent jobb minőségű alkatrészt (innen a $Q$ gyakran használatos ,, Quality factor'' feloldása), antennáknál a $Q$ csökkentésére szoktunk törekedni. A $Q$ egyik képlete \aref{equ:Q}. egyenletben látható \cite{multi-band}.
 		\begin{align}
 			\begin{split}\label{equ:Q}
-				Q_1 & = \omega \cdot \frac{\text{elektromágneses térben tárolt maximális energia}}{\text{átlagos veszteségi teljesítmény}} = \omega \cdot \frac{E_{E, max}+E_{M, max}}{P_V},
+				Q_1 & = \omega \cdot \frac{\text{térben tárolt maximális energia}}{\text{átlagos veszteségi teljesítmény}} = \\
+				& = \omega \cdot \frac{E_{E, max}+E_{M, max}}{P_V},
 			\end{split}
 		\end{align}
 		ahol $\omega$ a működési körfrekvencia, $E_E$ és $E_M$ az elektromos-, ill. mágneses térben tárolt energia, $P_V$ pedig az átlagos veszteségi teljesítmény, amibe antenna esetén beleszámít a kisugárzott teljesítmény is a tényleges veszteség mellett. Ezutóbbi többnyire vezetési- és dielektromos veszteségből tevődik össze, legtöbbször a mágneses hiszterézisveszteség elhanyagolható. Ha egy antennának nagy a $Q$-ja, akkor ez az antenna a betáplált teljesítménnyel hajlamosabb felépíteni az elektromos és mágneses teret maga körül, mint kisugározni azt. Persze egy idő után a térben tárolt energia állandósul, $P_V$ egyenlő lesz a betáplált teljesítménnyel. A tényleges veszteségek a tárolt energia növekedésével nőnek, ezért a nagy $Q$-jú antennák általában kisebb hatékonyságúak, a betáplált hasznos teljesítményt kisebb részét sugározzák ki. Antennáknál a nagy $Q$ egy másik negatív hatása a sávszélesség csökkenése, sok esetben pedig szélessávú antennákat igyekszünk készíteni, emiatt is indokolt a $Q$ csökkentésére való törekvés.
@@ -89,12 +99,3 @@ Ebben a dolgozatban a BME VIK Villamosmérnök MSc képzés Önálló Laboratór
 	\caption{A BIFA és az IFA kapcsolata.}
 	\label{fig:ifa-bifa}
 \end{figure}
-\section{Céges háttér}
-A BIFA tervezésének apropója az, hogy a Silicon Laboratories-nél kis méretű, körülbelül 3-szor 5 cm-es ,,radio board''-ok fejlesztésével is foglalkoznak, amelyek referencia implementációként szolgálnak a cég által termelt rádió IC-ket használó áramkörökhöz. Ezek alapján a Silabs ügyfelei (más cégek) már a végfelhasználóknak szánt rádiós eszközöket gyártanak. A radio boardok sokféle változatban készülnek, több frekvenciasávra, különböző rádiós protokollokat támogatnak, stb. Az egyik érintett frekvenciasáv a \SI{2,4}{GHz}-es ISM sáv, ahol például a Bluetooth protokoll is működik. A radio boardoknak többféle elrendezésben is helyt kell állniuk, sokuk egy nagyobb alaplaphoz (WSTK, Wireless Starter Kit Mainboard) csatlakoztatva rádiós kiegészítő kártyaként tud működni, de vannak olyanok is, amelyek önállóan elemről, vagy többféle módon is működtethetőek.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\textwidth]{kep/wstk-rb.jpg}
-	\caption{Egy radio board a képen nem látható IFA-val egy WSTK-hoz csatlakoztatva.}
-	\label{fig:wstk-rb}
-\end{figure}
-\par A radio boardok többségét WSTK-ra csatlakoztatva fejlesztik és tesztelik, de a végső vezetéknélküli termék már sok esetben a WSTK nélkül kerül felhasználásra. Ráadásul a radio board és a WSTK földkitöltése RF szempontból elég jól össze van kötve a 2 db 40 pines csatlakozó föld-pinjein keresztül, amikkel a két egység csatlakozik egymáshoz, ezért jogos a WSTK-t a monopól antenna szempontjából az alaplap kiterjesztéseként kezelni. Fontos tehát, hogy ne legyen lényeges különbség az antenna működésében a WSTK-t használó és az anélküli elrendezések között, innen az igény egy olyan antennára, ami érzéketlen a WSTK jelenlétére.
