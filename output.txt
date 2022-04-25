@@ -1,0 +1,697 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./onlab1.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-18>
+(c:/texlive/2021/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/02/12 v1.4n Standard LaTeX document class
+(c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo))
+(c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2021/texmf-dist/tex/generic/babel-hungarian/magyar.ldf))
+(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+(c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (c:/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
+(c:/texlive/2021/texmf-dist/tex/latex/translations/translations.sty
+(c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)))
+(c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def)
+(c:/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/titling/titling.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(c:/texlive/2021/texmf-dist/tex/latex/cite/cite.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty))
+No file onlab1.aux.
+(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(c:/texlive/2021/texmf-dist/tex/latex/base/report.cls) (./tartalom/cimlap.tex
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd) [1{c:/texlive/2021/texm
+f-var/fonts/map/pdftex/updmap/pdftex.map} <./kep/bme_logo.pdf>])
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+[1 <./tartalom/onlabtema.pdf>] [2] (./tartalom/bevezetes.tex
+1. fejezet.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1]
+
+LaTeX Warning: Reference `equ:G' on page 2 undefined on input line 15.
+
+[2 <./kep/wstk-rb.jpg>]
+
+LaTeX Warning: Reference `equ:eta' on page 3 undefined on input line 33.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+LaTeX Warning: Citation `story-of-q' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Reference `equ:Q' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Citation `multi-band' on page 3 undefined on input line 41.
+
+[3]
+
+LaTeX Warning: Reference `equ:Q2' on page 4 undefined on input line 49.
+
+
+LaTeX Warning: Citation `msa' on page 4 undefined on input line 62.
+
+
+LaTeX Warning: Citation `an847' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bifa-be' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bifa-ma' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bifa-ca' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Reference `fig:tipikus_ifa' on page 4 undefined on input line 64
+.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ifa.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:tipikus_ila' on page 4 undefined on input line 71
+.
+
+
+LaTeX Warning: Citation `multi-band' on page 4 undefined on input line 71.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `fodor' on page 4 undefined on input line 78.
+
+
+LaTeX Warning: Reference `fig:monopol' on page 4 undefined on input line 78.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+[4]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `multi-band' on page 5 undefined on input line 86.
+
+[5 <./kep/tipikus_ifa.pdf> <./kep/tipikus_ila.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `fig:se-diff' on page 6 undefined on input line 88.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: Reference `fig:ifa-bifa' on page 6 undefined on input line 95.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/ifa-bifa.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+) [6 <./kep/monopol.pdf> <./kep/se-diff.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] [7 <./kep/ifa-bifa.pdf>] (./tartalom/szimulaciok.tex
+2. fejezet.
+) [8]
+No file onlab1.bbl.
+(./onlab1.aux (./tartalom/cimlap.aux) (./tartalom/bevezetes.aux)
+(./tartalom/szimulaciok.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `onlab1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ ){c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pf
+b><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2021/texmf-dist/
+fonts/type1/public/cm-super/sfcc1728.pfb><c:/texlive/2021/texmf-dist/fonts/type
+1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/c
+m-super/sfrm1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
+ti1200.pfb>
+Output written on onlab1.pdf (11 pages, 735519 bytes).
+Transcript written on onlab1.log.
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+The top-level auxiliary file: onlab1.aux
+The style file: biolett.bst
+Database file #1: tartalom/hivatkozasok.bib
+Too many commas in name 1 of "Wang-Sang Lee, Hyun-Sung Tae, Kyoung-Sub Oh, Jong-Won Yu" for entry bifa-be
+while executing---line 1274 of file biolett.bst
+(There was 1 error message)
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./onlab1.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-18>
+(c:/texlive/2021/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/02/12 v1.4n Standard LaTeX document class
+(c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo))
+(c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2021/texmf-dist/tex/generic/babel-hungarian/magyar.ldf))
+(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+(c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (c:/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
+(c:/texlive/2021/texmf-dist/tex/latex/translations/translations.sty
+(c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)))
+(c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def)
+(c:/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/titling/titling.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(c:/texlive/2021/texmf-dist/tex/latex/cite/cite.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty)) (./onlab1.aux
+(./tartalom/cimlap.aux) (./tartalom/bevezetes.aux) (./tartalom/szimulaciok.aux)
+) (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(./onlab1.out) (./onlab1.out)
+(c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(c:/texlive/2021/texmf-dist/tex/latex/base/report.cls) (./tartalom/cimlap.tex
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd) [1{c:/texlive/2021/texm
+f-var/fonts/map/pdftex/updmap/pdftex.map} <./kep/bme_logo.pdf>])
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+[1 <./tartalom/onlabtema.pdf>] (./onlab1.toc) [2] (./tartalom/bevezetes.tex
+1. fejezet.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1] [2 <./kep/wstk-rb.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+LaTeX Warning: Citation `story-of-q' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Citation `multi-band' on page 3 undefined on input line 41.
+
+[3]
+
+LaTeX Warning: Citation `msa' on page 4 undefined on input line 62.
+
+
+LaTeX Warning: Citation `an847' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bifa-be' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bifa-ma' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Citation `bifa-ca' on page 4 undefined on input line 64.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ifa.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `multi-band' on page 4 undefined on input line 71.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `fodor' on page 4 undefined on input line 78.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+[4]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `multi-band' on page 5 undefined on input line 86.
+
+[5 <./kep/tipikus_ifa.pdf> <./kep/tipikus_ila.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/ifa-bifa.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+) [6 <./kep/monopol.pdf> <./kep/se-diff.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] [7 <./kep/ifa-bifa.pdf>] (./tartalom/szimulaciok.tex
+2. fejezet.
+) [8] (./onlab1.bbl (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd))
+[9] (./onlab1.aux (./tartalom/cimlap.aux) (./tartalom/bevezetes.aux)
+(./tartalom/szimulaciok.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ){c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pf
+b><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2021/texmf-dist/
+fonts/type1/public/cm-super/sfcc1728.pfb><c:/texlive/2021/texmf-dist/fonts/type
+1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/c
+m-super/sfrm1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
+ti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
+>
+Output written on onlab1.pdf (12 pages, 779443 bytes).
+Transcript written on onlab1.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./onlab1.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-10-18>
+(c:/texlive/2021/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/02/12 v1.4n Standard LaTeX document class
+(c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo))
+(c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2021/texmf-dist/tex/generic/babel-hungarian/magyar.ldf))
+(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+(c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (c:/texlive/2021/texmf-dist/tex/latex/siunitx/siunitx.sty
+(c:/texlive/2021/texmf-dist/tex/latex/translations/translations.sty
+(c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)))
+(c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def)
+(c:/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty))
+(c:/texlive/2021/texmf-dist/tex/latex/titling/titling.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(c:/texlive/2021/texmf-dist/tex/latex/cite/cite.sty)
+(c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty)) (./onlab1.aux
+(./tartalom/cimlap.aux) (./tartalom/bevezetes.aux) (./tartalom/szimulaciok.aux)
+) (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty)
+(c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(./onlab1.out) (./onlab1.out)
+(c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(c:/texlive/2021/texmf-dist/tex/latex/base/report.cls) (./tartalom/cimlap.tex
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd) [1{c:/texlive/2021/texm
+f-var/fonts/map/pdftex/updmap/pdftex.map} <./kep/bme_logo.pdf>])
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./tartalom/onlabtema.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+[1 <./tartalom/onlabtema.pdf>] (./onlab1.toc) [2] (./tartalom/bevezetes.tex
+1. fejezet.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1] [2 <./kep/wstk-rb.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+[3]
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ifa.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: found
+ PDF version <1.6>, but at most version <1.5> allowed
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+[4]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./kep/tipikus_ifa.pdf> <./kep/tipikus_ila.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./kep/ifa-bifa.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+) [6 <./kep/monopol.pdf> <./kep/se-diff.pdf
+
+pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] [7 <./kep/ifa-bifa.pdf>] (./tartalom/szimulaciok.tex
+2. fejezet.
+) [8] (./onlab1.bbl (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd))
+[9] (./onlab1.aux (./tartalom/cimlap.aux) (./tartalom/bevezetes.aux)
+(./tartalom/szimulaciok.aux)) ){c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-s
+uper/cm-super-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type
+1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/c
+m-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
+bx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
+><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb><c:/texli
+ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2021/texmf-dist/f
+onts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1
+/public/cm-super/sftt1200.pfb>
+Output written on onlab1.pdf (12 pages, 779578 bytes).
+Transcript written on onlab1.log.

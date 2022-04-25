@@ -1,0 +1,5 @@
+\chapter{Szimulációk}
+A probléma két lényeges részből áll: egy nyomtatott balun tervezéséből és egy BIFA tervezéséből. Ezek fejlesztése több szempontból is párhuzamosan kellett, hogy történjen, mert sem a balun, sem az antenna nem valósítható meg széles paramétertartományban. Az egyik lényeges kolrlátozó paraméter a hullámimpedancia -- az antenna talpponti impedanciáját a balun kimeneti impedanciájához kell illeszteni a kérdéses frekvenciatartományban (\SIrange{2405}{2485}{MHz}).
+\par A szimulációkhoz a CST Studio Suite programot használtam, ezen belül is a nagyfrekvenciás problématípust.
+\section{Az antenna}
+	Az antenna tervezésénél a legnagyobb nehézséget a megfelelő bemeneti reflexió elérése jelentette a kijelölt frekvenciasávon. Többféle konfiguráció mellett is csak nagyon kis tartalékkal tudtam teljesíteni a megadott \SI{-10}{dB} alatti bemeneti reflexiót (a reflexió korlát az antenna-balun rendszer bemenetére van megadva, de egyelőre csak az antenna differenciális bemenetére számított reflexióval foglalkozom).

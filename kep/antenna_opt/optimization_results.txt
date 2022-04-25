@@ -1,0 +1,5 @@
+ best so far (about -15 dB reflection at 2.45 GHz):
+ 
+ bal = 6272.75
+ lhl = 2008
+ lhw = 4000

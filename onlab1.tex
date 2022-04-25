@@ -21,12 +21,15 @@
 \usepackage{titling} % a title, author parancsok szabad használatához
 \usepackage{xcolor}
 \usepackage{pdfpages}
+\usepackage{cite} \def\citepunct{], [} \def\citedash{]--[}
 
 % a TikZ rajzoló modul, és a kapcsolási rajz készítő modul, ha kell
 %\usepackage{tikz}
 %\usepackage{circuitikz}
 
-\bibliographystyle{ieeetr}
+\sisetup{range-phrase=--}
+
+\bibliographystyle{biolett}
 
 %\pagenumbering{gobble}
 
@@ -111,6 +114,7 @@
 	\newpage
 	\pagenumbering{arabic}
 	\include{tartalom/bevezetes.tex}
+	\include{tartalom/szimulaciok.tex}
 	\newpage
 	\bibliography{tartalom/hivatkozasok.bib}
 \end{document}
