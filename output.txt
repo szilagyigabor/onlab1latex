@@ -149,159 +149,16 @@ LaTeX Warning: Citation `multi-band' on page 3 undefined on input line 41.
 
 [3]
 
-LaTeX Warning: Reference `equ:Q2' on page 4 undefined on input line 49.
+LaTeX Warning: Reference `equ:Q2' on page 4 undefined on input line 50.
 
 
-LaTeX Warning: Citation `msa' on page 4 undefined on input line 62.
+LaTeX Warning: Reference `equ:Q3' on page 4 undefined on input line 57.
 
-
-LaTeX Warning: Citation `an847' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-be' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-ma' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-ca' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Reference `fig:tipikus_ifa' on page 4 undefined on input line 64
-.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ifa.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Reference `fig:tipikus_ila' on page 4 undefined on input line 71
-.
-
-
-LaTeX Warning: Citation `multi-band' on page 4 undefined on input line 71.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-[4 <./kep/tipikus_ifa.pdf>]
-
-LaTeX Warning: Citation `fodor' on page 5 undefined on input line 78.
-
-
-LaTeX Warning: Reference `fig:monopol' on page 5 undefined on input line 78.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: found PDF
- version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Citation `multi-band' on page 5 undefined on input line 86.
-
-[5 <./kep/tipikus_ila.pdf> <./kep/monopol.pdf
-
-pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->]
-
-LaTeX Warning: Reference `fig:se-diff' on page 6 undefined on input line 88.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: found PDF
- version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Reference `fig:ifa-bifa' on page 6 undefined on input line 95.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/ifa-bifa.pdf): PDF inclusion: found PD
-F version <1.6>, but at most version <1.5> allowed
-) [6 <./kep/se-diff.pdf>] [7 <./kep/ifa-bifa.pdf>] (./tartalom/modellezes.tex
-2. fejezet.
-
-LaTeX Warning: Reference `fig:cps' on page 8 undefined on input line 11.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/cps.pdf): PDF inclusion: found PDF ver
-sion <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
-
-LaTeX Warning: Citation `coupled-slots' on page 9 undefined on input line 19.
-
-
-LaTeX Warning: Citation `analytical' on page 9 undefined on input line 19.
-
-
-LaTeX Warning: Reference `tab:slotline-cps' on page 9 undefined on input line 2
-0.
-
-
-LaTeX Warning: Reference `fig:cpw' on page 9 undefined on input line 34.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/cpw.pdf): PDF inclusion: found PDF ver
-sion <1.6>, but at most version <1.5> allowed
-[9 <./kep/cps.pdf>]
-
-LaTeX Warning: Citation `cpw-ccs' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `easy-balun' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `0-55GHz' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `0-110GHz' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `cpw-ccs' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `uwb-ms-cps' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `conv-balun-1' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `conv-balun-2' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `wb-cps-ms' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Reference `fig:egyszeru.bifa' on page 10 undefined on input line
- 46.
-
-[10 <./kep/cpw.pdf>]) [11] (./tartalom/szimulaciok.tex
-3. fejezet.
-
-LaTeX Warning: Reference `fig:balun-s11' on page 12 undefined on input line 4.
-
-
-LaTeX Warning: Reference `fig:balun-kereszt' on page 12 undefined on input line
- 4.
-
-
-LaTeX Warning: Reference `tab:balun-param' on page 12 undefined on input line 4
-.
-
-
-! LaTeX Error: Unknown graphics extension: .bmp.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...dth=0.6\textwidth]{kep/results/balun_1.bmp}
-                                                  
+! Undefined control sequence.
+<argument> \vardelta 
+                     |\rho (\omega )|
+l.62 		\end{align}
+                  
 !  ==> Fatal error occurred, no output PDF file produced!
 Transcript written on onlab1.log.
 This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
@@ -310,22 +167,6 @@ The style file: biolett.bst
 I found no \bibdata command---while reading file onlab1.aux
 Warning--I didn't find a database entry for "story-of-q"
 Warning--I didn't find a database entry for "multi-band"
-Warning--I didn't find a database entry for "msa"
-Warning--I didn't find a database entry for "an847"
-Warning--I didn't find a database entry for "bifa-be"
-Warning--I didn't find a database entry for "bifa-ma"
-Warning--I didn't find a database entry for "bifa-ca"
-Warning--I didn't find a database entry for "fodor"
-Warning--I didn't find a database entry for "coupled-slots"
-Warning--I didn't find a database entry for "analytical"
-Warning--I didn't find a database entry for "cpw-ccs"
-Warning--I didn't find a database entry for "easy-balun"
-Warning--I didn't find a database entry for "0-55GHz"
-Warning--I didn't find a database entry for "0-110GHz"
-Warning--I didn't find a database entry for "uwb-ms-cps"
-Warning--I didn't find a database entry for "conv-balun-1"
-Warning--I didn't find a database entry for "conv-balun-2"
-Warning--I didn't find a database entry for "wb-cps-ms"
 (There was 1 error message)
 This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -415,8 +256,7 @@ LaTeX Warning: Command \underline  has changed.
 (c:/texlive/2021/texmf-dist/tex/latex/cite/cite.sty)
 (c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty)) (./onlab1.aux
-(./tartalom/cimlap.aux) (./tartalom/bevezetes.aux) (./tartalom/modellezes.aux)
-(./tartalom/szimulaciok.aux))
+(./tartalom/cimlap.aux) (./tartalom/bevezetes.aux))
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -470,128 +310,16 @@ LaTeX Warning: Citation `multi-band' on page 3 undefined on input line 41.
 
 [3]
 
-LaTeX Warning: Citation `msa' on page 4 undefined on input line 62.
+LaTeX Warning: Reference `equ:Q2' on page 4 undefined on input line 50.
 
 
-LaTeX Warning: Citation `an847' on page 4 undefined on input line 64.
+LaTeX Warning: Reference `equ:Q3' on page 4 undefined on input line 57.
 
-
-LaTeX Warning: Citation `bifa-be' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-ma' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-ca' on page 4 undefined on input line 64.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ifa.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Citation `multi-band' on page 4 undefined on input line 71.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-[4 <./kep/tipikus_ifa.pdf>]
-
-LaTeX Warning: Citation `fodor' on page 5 undefined on input line 78.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: found PDF
- version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Citation `multi-band' on page 5 undefined on input line 86.
-
-[5 <./kep/tipikus_ila.pdf> <./kep/monopol.pdf
-
-pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->]
-
-pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: found PDF
- version <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/ifa-bifa.pdf): PDF inclusion: found PD
-F version <1.6>, but at most version <1.5> allowed
-) [6 <./kep/se-diff.pdf>] [7 <./kep/ifa-bifa.pdf>] (./tartalom/modellezes.tex
-2. fejezet.
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/cps.pdf): PDF inclusion: found PDF ver
-sion <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
-
-LaTeX Warning: Citation `coupled-slots' on page 9 undefined on input line 19.
-
-
-LaTeX Warning: Citation `analytical' on page 9 undefined on input line 19.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/cpw.pdf): PDF inclusion: found PDF ver
-sion <1.6>, but at most version <1.5> allowed
-[9 <./kep/cps.pdf>]
-
-LaTeX Warning: Citation `cpw-ccs' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `easy-balun' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `0-55GHz' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `0-110GHz' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `cpw-ccs' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `uwb-ms-cps' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `conv-balun-1' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `conv-balun-2' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `wb-cps-ms' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Reference `fig:egyszeru.bifa' on page 10 undefined on input line
- 46.
-
-[10 <./kep/cpw.pdf>]) [11] (./tartalom/szimulaciok.tex
-3. fejezet.
-
-LaTeX Warning: Reference `fig:balun-s11' on page 12 undefined on input line 4.
-
-
-LaTeX Warning: Reference `fig:balun-kereszt' on page 12 undefined on input line
- 4.
-
-
-LaTeX Warning: Reference `tab:balun-param' on page 12 undefined on input line 4
-.
-
-
-! LaTeX Error: Unknown graphics extension: .bmp.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...dth=0.6\textwidth]{kep/results/balun_1.bmp}
-                                                  
+! Undefined control sequence.
+<argument> \vardelta 
+                     |\rho (\omega )|
+l.62 		\end{align}
+                  
 !  ==> Fatal error occurred, no output PDF file produced!
 Transcript written on onlab1.log.
 This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex)
@@ -682,8 +410,7 @@ LaTeX Warning: Command \underline  has changed.
 (c:/texlive/2021/texmf-dist/tex/latex/cite/cite.sty)
 (c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty)) (./onlab1.aux
-(./tartalom/cimlap.aux) (./tartalom/bevezetes.aux) (./tartalom/modellezes.aux)
-(./tartalom/szimulaciok.aux))
+(./tartalom/cimlap.aux) (./tartalom/bevezetes.aux))
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -737,127 +464,15 @@ LaTeX Warning: Citation `multi-band' on page 3 undefined on input line 41.
 
 [3]
 
-LaTeX Warning: Citation `msa' on page 4 undefined on input line 62.
+LaTeX Warning: Reference `equ:Q2' on page 4 undefined on input line 50.
 
 
-LaTeX Warning: Citation `an847' on page 4 undefined on input line 64.
+LaTeX Warning: Reference `equ:Q3' on page 4 undefined on input line 57.
 
-
-LaTeX Warning: Citation `bifa-be' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-ma' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Citation `bifa-ca' on page 4 undefined on input line 64.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ifa.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Citation `multi-band' on page 4 undefined on input line 71.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/tipikus_ila.pdf): PDF inclusion: found
- PDF version <1.6>, but at most version <1.5> allowed
-[4 <./kep/tipikus_ifa.pdf>]
-
-LaTeX Warning: Citation `fodor' on page 5 undefined on input line 78.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: found PDF
- version <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: Citation `multi-band' on page 5 undefined on input line 86.
-
-[5 <./kep/tipikus_ila.pdf> <./kep/monopol.pdf
-
-pdfTeX warning: pdflatex.exe (file ./kep/monopol.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->]
-
-pdfTeX warning: pdflatex.exe (file ./kep/se-diff.pdf): PDF inclusion: found PDF
- version <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/ifa-bifa.pdf): PDF inclusion: found PD
-F version <1.6>, but at most version <1.5> allowed
-) [6 <./kep/se-diff.pdf>] [7 <./kep/ifa-bifa.pdf>] (./tartalom/modellezes.tex
-2. fejezet.
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/cps.pdf): PDF inclusion: found PDF ver
-sion <1.6>, but at most version <1.5> allowed
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8]
-
-LaTeX Warning: Citation `coupled-slots' on page 9 undefined on input line 19.
-
-
-LaTeX Warning: Citation `analytical' on page 9 undefined on input line 19.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./kep/cpw.pdf): PDF inclusion: found PDF ver
-sion <1.6>, but at most version <1.5> allowed
-[9 <./kep/cps.pdf>]
-
-LaTeX Warning: Citation `cpw-ccs' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `easy-balun' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `0-55GHz' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `0-110GHz' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation `cpw-ccs' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `uwb-ms-cps' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `conv-balun-1' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `conv-balun-2' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Citation `wb-cps-ms' on page 10 undefined on input line 44.
-
-
-LaTeX Warning: Reference `fig:egyszeru.bifa' on page 10 undefined on input line
- 46.
-
-[10 <./kep/cpw.pdf>]) [11] (./tartalom/szimulaciok.tex
-3. fejezet.
-
-LaTeX Warning: Reference `fig:balun-s11' on page 12 undefined on input line 4.
-
-
-LaTeX Warning: Reference `fig:balun-kereszt' on page 12 undefined on input line
- 4.
-
-
-LaTeX Warning: Reference `tab:balun-param' on page 12 undefined on input line 4
-.
-
-
-! LaTeX Error: Unknown graphics extension: .bmp.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...dth=0.6\textwidth]{kep/results/balun_1.bmp}
-                                                  
+! Undefined control sequence.
+<argument> \vardelta 
+                     |\rho (\omega )|
+l.62 		\end{align}
+                  
 !  ==> Fatal error occurred, no output PDF file produced!
 Transcript written on onlab1.log.
