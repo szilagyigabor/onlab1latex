@@ -6,18 +6,18 @@ A probléma négy lényeges részből áll, amelyeket többé-kevésbé külön 
 	\item Antenna
 	\item Földkitöltésben gerjesztett áramokat csökkentő mintázat
 \end{enumerate}
-\par Ezek fejlesztése több szempontból is párhuzamosan kellett, hogy történjen, mert sem a balun, sem az antenna nem valósítható meg széles paramétertartományban. Az egyik lényeges korlátozó paraméter a hullámimpedancia -- az antenna bemeneti impedanciáját a balun kimeneti impedanciájához kell illeszteni a kérdéses frekvenciatartományban (\SIrange{2405}{2485}{MHz}) és természetesen ehhez az impedanciához kell méretezni az antennát tápláló differenciális vonal hullámimpedanciáját, hogy ez se okozzon lényeges reflexiót.
+\par Ezek fejlesztése több szempontból is párhuzamosan kellett, hogy történjen, mert sem a balun, sem az antenna nem valósítható meg széles paramétertartományban. Az egyik lényeges korlátozó paraméter a karakterisztikus impedancia -- az antenna bemeneti impedanciáját a balun kimeneti impedanciájához kell illeszteni a kérdéses frekvenciatartományban (\SIrange{2405}{2485}{MHz}) és természetesen ehhez az impedanciához kell méretezni az antennát tápláló differenciális vonal karakterisztikus impedanciáját, hogy ez se okozzon lényeges reflexiót.
 \section{Differenciális vonal}
-Mivel az antenna differenciális táplálású, érdemes differenciális tápvonallal gerjeszteni. Az antenna által lefedett terület alatt nem célszerű földkitöltést használni az alsóbb rézrétegeken, mert ezek erősen lerontanák az antenna tulajdonságait. Így a tápláló differenciális vonalnak is olyannak kell lennie, hogy nincs alatta földkitöltés. Egy ilyen tápvonal a koplanár differenciális vonal (coplanar strip, CPS). A tápvonal keresztmetszete \aref{fig:cps}. ábrán látható.
+Mivel az antenna differenciális táplálású, érdemes differenciális tápvonallal gerjeszteni. Az antenna által lefedett terület alatt nem szabad földkitöltést használni az alsóbb rézrétegeken, mert ezek erősen lerontanák az antenna tulajdonságait. Így a tápláló differenciális vonal is célszerűen olyan, hogy nincs alatta földkitöltés. Ez nem feltétlenül kell, hogy így legyen, de ehhez a verzióhoz ragaszkodtam a félévben. Egy ilyen tápvonal a CPS (coplanar strip). A tápvonal keresztmetszete \aref{fig:cps}. ábrán látható.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{kep/cps.pdf}
-	\caption{Az antennát tápláló differenciális koplanár vonal (CPS) keresztmetszete.}
+	\caption{Az antennát tápláló szimmetrikus koplanár vonal (CPS) keresztmetszete.}
 	\label{fig:cps}
 \end{figure}
-\par Sajnos az ilyen tápvonalakban nem lehetséges a TEM hullámterjedés, mivel a vezetők közötti elektromos erővonalak egy része a hordozó anyagában záródik, míg egy másik részük a levegőben, emiatt ugyanannak a haladó hullámnak egyes részei különböző sebességgel haladnak a vonalon, longitudinális térerősség-komponenseket hozva létre. Ez a jelenség pedig diszperzióhoz vezet és megbonyolítja a tápvonal hullámimpedanciájának definícióját is.
-\par A CPS relatíve nehezen kezelhető volta miatt ritkábban használják, mint például a CPW tápvonalat. A CPS-t leíró közelítő formulák is kevésbé elterjedtek \cite{coupled-slots, analytical}, nagyobb egyszerűsítésekkel adódnak és emiatt ez a tápvonal nem is szerepel az ismertebb impedanciakalkulátor programokban, mint például a KiCAD, vagy az AWR MWO programcsomagokhoz tartozó, vagy internetes kalkulátorokban. A tápvonal hullámimpedanciáját a CST ,,Waveguide Port'' funkcióját használva becsültem meg. Ilyen port használatakor a szimuláció során kiszámolódnak különböző módusok a porthoz (ami a CPS keresztmetszetéhez illeszkedik) és egy meghatározott alap módusra (differenciális, odd mode) adódó hullámimpedanciával számol tovább a program. Az így adódó értéket használtam fel, mint hullámimpedancia értéket.
-\par Az említett nehézségek miatt ezt a pontatlanságot elfogadtam, ezzel együtt dolgoztam. Ezt a becslést az is alátámasztja, hogy egy hasonló felépítésű tápvonal, a slotline impedanciájával alulról becsülhető az azonos hézaggal és szubsztráttal elkészített CPS impedanciája. A slotline keresztmetszete a CPS-ével megegyező, azzal a kivétellel, hogy a két vezető oldalirányban sokkal nagyobb kiterjedésű, gyakorlatilag a teljes rendelkezésre álló felületet kitölti, végtelennek tekinthető. A nagyobb kiterjedésű vezetők közötti hosszegységre jutó kapacitás nagyobb, ezáltal a hullámimpedancia kisebb, mint a CPS esetében. Az összehasonlításhoz használt méretek és hullámimpedancia értékek \aref{tab:slotline-cps}. táblázatban láthatóak.
+\par Sajnos az ilyen tápvonalakban nem lehetséges a tisztán TEM hullámterjedés, és diszperzió lép fel. Ennek oka, hogy az erővonalak egy jelentős része a levegőn keresztül záródik, egy másik nagy részük pedig a szubsztráton keresztül (esetleg szubsztrát-levegő-szubsztrát sorozaton keresztül), emiatt a haladó hullám különböző részei különböző effektív dielektromos állandót és ezáltal terjedési együtthatót tapasztalnak. Az ilyen vonalakat kvázi-TEM közelítéssel érdemes kezelni, de ez pontatlanságokat visz a számításba az elhanyagolások mértékétől függően, ami tápvonalspecifikus.
+\par A CPS erősebb diszperzív volta miatt ritkábban használják, mint például a CPW(G) tápvonalat. A CPS-t leíró közelítő formulák is kevésbé elterjedtek \cite{coupled-slots, analytical}, nagyobb egyszerűsítésekkel adódnak és emiatt ez a tápvonal nem is szerepel az ismertebb impedanciakalkulátor programokban, mint például a KiCAD, vagy az AWR MWO programcsomagokhoz tartozó, vagy internetes kalkulátorokban. A tápvonal karakterisztikus impedanciáját a CST ,,Waveguide Port'' funkcióját használva becsültem meg. Ilyen port használatakor a szimuláció során kiszámolódnak különböző módusok a porthoz (ami a CPS keresztmetszetéhez illeszkedik) és egy meghatározott alap módusra adódó karakterisztikus impedanciával számol tovább a program. Az így adódó értéket használtam fel, mint közelítő karakterisztikus impedancia értéket.
+\par Az említett nehézségek miatt ezt a pontatlanságot elfogadtam, ezzel együtt dolgoztam. Ezt a becslést az is alátámasztja, hogy egy hasonló felépítésű tápvonal, a slotline impedanciájával alulról becsülhető az azonos hézaggal és szubsztráttal elkészített CPS impedanciája. A slotline keresztmetszete a CPS-ével megegyező, azzal a kivétellel, hogy a két vezető oldalirányban sokkal nagyobb kiterjedésű, gyakorlatilag a teljes rendelkezésre álló felületet kitölti, végtelennek tekinthető. A nagyobb kiterjedésű vezetők közötti hosszegységre jutó kapacitás nagyobb, ezáltal a karakterisztikus impedancia kisebb, mint a CPS esetében. Az összehasonlításhoz használt méretek és karakterisztikus impedancia értékek \aref{tab:slotline-cps}. táblázatban láthatóak.
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{||c|c|c|c|c||c|c||}
@@ -31,17 +31,52 @@ Mivel az antenna differenciális táplálású, érdemes differenciális tápvon
 	\label{tab:slotline-cps}
 \end{table}
 \section{A nyomtatott balun transzformátor}
-	A struktúrában a balun (balanced-unbalanced) transzformátor feladata a rádió kimenetétől érkező 50 Ohm-os, aszimmetrikus tápvonal és az antennát tápláló differenciális vonal egymáshoz illesztése minimális reflexióval. A rádió felől érkező tápvonalnak (és egyben a balun aszimmetrikus portjának) a paraméterezése fix, a cég által használt radio boardokon egységes koplanáris tápvonal hátoldali földlemezzel (Coplanar Waveguide with Ground, CPW-G, CPW). A tápvonal keresztmetszete \aref{fig:cpw}. ábrán látható.
+	A struktúrában a balun (balanced-unbalanced) transzformátor feladata a rádió kimenetétől érkező 50 Ohm-os, aszimmetrikus tápvonal és az antennát tápláló szimmetrikus vonal egymáshoz illesztése minimális reflexióval. A rádió felől érkező tápvonalnak (és egyben a balun aszimmetrikus portjának) a paraméterezése fix, a cég által használt radio boardokon egységes koplanáris tápvonal hátoldali földlemezzel (Coplanar Waveguide with Ground, CPW-G, CPW). A tápvonal keresztmetszete \aref{fig:cpw}. ábrán látható.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{kep/cpw.pdf}
 	\caption{A rádió felől érkező koplanár tápvonal (CPW) keresztmetszete.}
 	\label{fig:cpw}
 \end{figure}
-	A CPW tápvonal alapvetően jó tulajdonságokkal rendelkezik. Csak kis mértékben diszperzív, mert a két vezető között az elektromos erővonalak nagy része az $\epsilon_r$ relatív dielektromos állandójú szubsztrátban záródik, így nincs nagy jelentőssége a levegőben és szubsztrátban terjedő rész-hullámok fázissebességbeli különbségének, egyszerűen QTEM közelítéssel kezelhető.
+	A CPW tápvonal alapvetően jó tulajdonságokkal rendelkezik. Csak kis mértékben diszperzív, mert a két vezető között az elektromos erővonalak nagy része az $\epsilon_r$ relatív dielektromos állandójú szubsztrátban záródik, így nincs nagy jelentőssége a levegőben és szubsztrátban terjedő rész-hullámok fázissebességbeli különbségének, viszonylag pontosan leírható QTEM közelítéssel.
 \par A balun tervezéséhez sajnos nem találtam olyan forrást, ami a fentebb leírt két tápvonal közötti illesztést valósít meg (CPWG és CPS), így a más esetekre használható megoldásokból igyekeztem összekombinálni egy használható balunt.
 \par A gyakorlatban használt nyomtatott balunok egyik nagy csoportja olyan struktúrájú, aminél egyáltalán nincs hátoldali földkitöltés, ennek tipikus példája az MMIC-k (Monolithic Microwave Integrated Circuit) alkalmazási területe, ahol a teljes vezető mintázat egyrétegű és a félvezető chip felszínén helyezkedik el \cite{cpw-ccs, easy-balun, 0-55GHz, 0-110GHz}.
 \par A másik struktúracsoport, amihez találtam forrásokat, ugyan egy hátoldali földkitöltéssel rendelkező és egy anélküli tápvonal közötti átmenetet valósít meg, de minden esetben az előbbi tápvonaltípust a Microstrip vonal képviseli. Ezekhez a struktúrákhoz képest a felső oldali földkitöltés megléte jelent külön kihítvást a CPWG tápvonal körül az általam megoldandó problémánál \cite{cpw-ccs, uwb-ms-cps, conv-balun-1, conv-balun-2, wb-cps-ms}.
 \section{Az antenna}
-	Az antenna tervezésénél az első lépést az jelentette, hogy felderítsem a BIFA struktúrához tartozó, realizálható bemeneti impedancia tartományt, mert várhatóan a realizálható antenna bemeneti impedancia a fő korlátozó tényező a struktúra differenciális részének paraméterezésére nézve. Ezt a lépést egy relatíve egyszerű struktúrával végeztem, aminek a különböző méretparamétereinek hangolásával értem el a különböző valós bemeneti impedanciákat a bemeneten. Ez a struktúra \aref{fig:egyszeru.bifa}. ábrán látható.
-\par A lépés lényegében próbálkozásból állt, különböző rögzített paraméterek mellett hangoltam ki az antennát a kérdéses sávon valós impedanciára.
+	Az antenna tervezésénél az első lépést az jelentette, hogy felderítsem a BIFA struktúrához tartozó, realizálható bemeneti impedancia tartományt, mert várhatóan az antenna bemeneti impedancia a fő korlátozó tényező a struktúra differenciális részének paraméterezésére nézve. Ezt a lépést egy relatíve egyszerű szimulációs modellel végeztem CST-ben, aminek a különböző méretparamétereinek hangolásával értem el a különböző valós bemeneti impedanciákat. Ez a struktúra \aref{fig:egyszeru_bifa}. ábrán látható.
+\begin{figure}[h]
+	\centering
+	\includegraphics[draft]{kep/egyszeru_bifa.png}
+	\caption{A bemeneti impedanciatartomány felderítéséhez használt BIFA modell.}
+	\label{fig:egyszeru_bifa}
+\end{figure}
+Ez a lépés lényegében próbálkozásból állt, különböző rögzített karakterisztikus impedanciájú tápvonallal gerjesztve igyekeztem az antenna paramétereinek változtatásával kihangolni azt a kérdéses sávon valós impedanciára. Eredményképpen azt kaptam, hogy körülbelül a \SIrange{100}{130}{\ohm} tartományban gond nélkül kihangolható az antenna. Ebből a tartományból végül a \SI{100}{\ohm}-os bemeneti impedancia mellett döntöttem, mert a balunt kisebb reflexiókkal lehet megvalósítani, ha a be- és kimenete között kisebb mértékű impedanciatranszformációra van szükség.
+\par A következőkben elkészítettem többféle BIFA variáció modelljét CST-ben, amiket később a paramétereik beállításával kihangoltam a kiválasztott bemeneti impedanciára. A variációk \aref{fig:bifa-variaciok}. ábrán láthatóak.
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[draft]{kep/results/bifa.png}
+		\caption{alsóbb rézréteg}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[draft]{kep/results/bifa_bowtie.png}
+		\caption{köztes réteg}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[draft]{kep/results/bifa_broadband.png}
+		\caption{felső rézréteg}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[draft]{kep/results/bifa_meandered.png}
+		\caption{felső rézréteg}
+	\end{subfigure}
+	\caption{A BIFA szimulált variációi.}
+	\label{fig:balun-kereszt}
+\end{figure}
