@@ -38,6 +38,7 @@ A BIFA tervezésének apropója az, hogy a Silicon Laboratories-nél kis méret�
 			\end{split}
 		\end{align}
 		\subsection{Antenna $Q$}
+		\label{sec:q}
 		A $Q$ paraméter eredetileg diszkrét reaktáns alkatrészek jellemzésére lett bevezetve (tekercs, kondenzátor, rezgőkörök, stb.) \cite{story-of-q}. Míg reaktáns alkatrészeknél (tekercs, kondenzátor, rezonátorok, stb.) a nagyobb $Q$ jelent jobb minőségű, kisebb veszteségű alkatrészt (innen a $Q$ gyakran használatos ,, Quality factor'' feloldása), antennáknál a $Q$ csökkentésére szoktunk törekedni. A $Q$ antennáknál legtöbbször használt, szokásos képlete \aref{equ:Q}. egyenletben látható \cite{multi-band}.
 		\begin{align}
 			\begin{split}\label{equ:Q}
@@ -74,7 +75,7 @@ A BIFA tervezésének apropója az, hogy a Silicon Laboratories-nél kis méret�
 				Q_4(\omega) & = \frac{\omega}{2 R(\omega)}|Z'(\omega)|,
 			\end{split}
 		\end{align}
-		ahol $R(\omega)$ a bemeneti rezisztencia, $Z'(\omega)$ pedig a bemeneti impedancia körfrekvencia szerinti deriváltja. Ez a közelítés elvileg elég jól használható kis sávszélességű, rezonáns vagy antirezonáns antennákra az általam tervezett antennák pedig nem túl nagy 3 dB-s relatív sávszélességűek ($\sim 18\%$) és a rezonancia közelében működnek.
+		ahol $R(\omega)$ a bemeneti rezisztencia, $Z'(\omega)$ pedig a bemeneti impedancia körfrekvencia szerinti deriváltja. A 3-as és 4-es számú közelítés elvileg elég jól használható kis sávszélességű, rezonáns vagy antirezonáns antennákra, az általam tervezett antennák pedig nem túl nagy 3 dB-s relatív sávszélességűek ($\sim 18\%$) és a rezonanciafrekvenciájuk közelében működnek.
 \section{Monopól antennák}
 \par A BIFA antennatípus nem gyakori a szakirodalomban, az irodalomkutatás során csak néhány cikkben vagy application note-ban találkoztam vele \cite{an847, bifa-be, bifa-ma, bifa-ca}. Ez az antennatípus egy variációja az IFA-nak (Inverted F Antenna, \aref{fig:tipikus_ifa}. ábra), ezért az IFA jellegzetességeiből kiindulva érdemes tárgyalni, amihez érdemes megvizsgálni a monopól antennák általános jellemzőit, mivel az IFA is ebbe az antennacsaládba tartozik.
 \begin{figure}[h]

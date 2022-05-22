@@ -30,8 +30,8 @@ Mivel az antenna differenciális táplálású, érdemes differenciális tápvon
 	\caption{asd}
 	\label{tab:slotline-cps}
 \end{table}
-\section{A nyomtatott balun transzformátor}
-	A struktúrában a balun (balanced-unbalanced) transzformátor feladata a rádió kimenetétől érkező 50 Ohm-os, aszimmetrikus tápvonal és az antennát tápláló szimmetrikus vonal egymáshoz illesztése minimális reflexióval. A rádió felől érkező tápvonalnak (és egyben a balun aszimmetrikus portjának) a paraméterezése fix, a cég által használt radio boardokon egységes koplanáris tápvonal hátoldali földlemezzel (Coplanar Waveguide with Ground, CPW-G, CPW). A tápvonal keresztmetszete \aref{fig:cpw}. ábrán látható.
+\section{A balun transzformátor}
+	A struktúrában a balun (balanced-unbalanced) transzformátor feladata a rádió kimenetétől érkező 50 Ohm-os, aszimmetrikus tápvonal és az antennát tápláló szimmetrikus vonal egymáshoz illesztése minimális reflexióval. Költségminimalizálás miatt ezt egy nyomtatott struktúrával tervezem megvalósítani, ami nem használ külön diszkrét felületszerelt alkatrészeket. A rádió felől érkező tápvonalnak (és egyben a balun aszimmetrikus portjának) a paraméterezése fix, a cég által használt radio boardokon egységes koplanáris tápvonal hátoldali földlemezzel (Coplanar Waveguide with Ground, CPW-G, CPW). A tápvonal keresztmetszete \aref{fig:cpw}. ábrán látható.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{kep/cpw.pdf}
@@ -43,40 +43,29 @@ Mivel az antenna differenciális táplálású, érdemes differenciális tápvon
 \par A gyakorlatban használt nyomtatott balunok egyik nagy csoportja olyan struktúrájú, aminél egyáltalán nincs hátoldali földkitöltés, ennek tipikus példája az MMIC-k (Monolithic Microwave Integrated Circuit) alkalmazási területe, ahol a teljes vezető mintázat egyrétegű és a félvezető chip felszínén helyezkedik el \cite{cpw-ccs, easy-balun, 0-55GHz, 0-110GHz}.
 \par A másik struktúracsoport, amihez találtam forrásokat, ugyan egy hátoldali földkitöltéssel rendelkező és egy anélküli tápvonal közötti átmenetet valósít meg, de minden esetben az előbbi tápvonaltípust a Microstrip vonal képviseli. Ezekhez a struktúrákhoz képest a felső oldali földkitöltés megléte jelent külön kihítvást a CPWG tápvonal körül az általam megoldandó problémánál \cite{cpw-ccs, uwb-ms-cps, conv-balun-1, conv-balun-2, wb-cps-ms}.
 \section{Az antenna}
-	Az antenna tervezésénél az első lépést az jelentette, hogy felderítsem a BIFA struktúrához tartozó, realizálható bemeneti impedancia tartományt, mert várhatóan az antenna bemeneti impedancia a fő korlátozó tényező a struktúra differenciális részének paraméterezésére nézve. Ezt a lépést egy relatíve egyszerű szimulációs modellel végeztem CST-ben, aminek a különböző méretparamétereinek hangolásával értem el a különböző valós bemeneti impedanciákat. Ez a struktúra \aref{fig:egyszeru_bifa}. ábrán látható.
-\begin{figure}[h]
-	\centering
-	\includegraphics[draft]{kep/egyszeru_bifa.png}
-	\caption{A bemeneti impedanciatartomány felderítéséhez használt BIFA modell.}
-	\label{fig:egyszeru_bifa}
-\end{figure}
+	Az antenna tervezésénél az első lépést az jelentette, hogy felderítsem a BIFA struktúrához tartozó, realizálható bemeneti impedancia tartományt, mert várhatóan az antenna bemeneti impedancia a fő korlátozó tényező a struktúra differenciális részének paraméterezésére nézve. Ezt a lépést egy relatíve egyszerű szimulációs modellel végeztem CST-ben, aminek a különböző méretparamétereinek hangolásával értem el a különböző valós bemeneti impedanciákat. Ez a struktúra \aref{subfig:bifa}. ábrán látható.
 Ez a lépés lényegében próbálkozásból állt, különböző rögzített karakterisztikus impedanciájú tápvonallal gerjesztve igyekeztem az antenna paramétereinek változtatásával kihangolni azt a kérdéses sávon valós impedanciára. Eredményképpen azt kaptam, hogy körülbelül a \SIrange{100}{130}{\ohm} tartományban gond nélkül kihangolható az antenna. Ebből a tartományból végül a \SI{100}{\ohm}-os bemeneti impedancia mellett döntöttem, mert a balunt kisebb reflexiókkal lehet megvalósítani, ha a be- és kimenete között kisebb mértékű impedanciatranszformációra van szükség.
-\par A következőkben elkészítettem többféle BIFA variáció modelljét CST-ben, amiket később a paramétereik beállításával kihangoltam a kiválasztott bemeneti impedanciára. A variációk \aref{fig:bifa-variaciok}. ábrán láthatóak.
+\par A következőkben elkészítettem többféle BIFA variáció modelljét CST-ben, amiket később a paramétereik beállításával kihangoltam a kiválasztott bemeneti impedanciára. A variációk közül azok, amelyek viszonylag jól kezelhetőek \aref{fig:bifa-variaciok}. ábrán láthatóak.
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}[b]{0.48\textwidth}
 		\centering
-		\includegraphics[draft]{kep/results/bifa.png}
-		\caption{alsóbb rézréteg}
+		\includegraphics[width=\textwidth]{kep/results/bifa_3D.png}
+		\caption{egyszerű BIFA}
+		\label{subfig:bifa}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.48\textwidth}
 		\centering
-		\includegraphics[draft]{kep/results/bifa_bowtie.png}
-		\caption{köztes réteg}
+		\includegraphics[width=\textwidth]{kep/results/bifa_broadband_3D.png}
+		\caption{kiszélesedő, visszahajló szárú BIFA}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.48\textwidth}
 		\centering
-		\includegraphics[draft]{kep/results/bifa_broadband.png}
-		\caption{felső rézréteg}
+		\includegraphics[width=\textwidth]{kep/results/bifa_meandered_3D.png}
+		\caption{meanderezett szárú BIFA}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.48\textwidth}
-		\centering
-		\includegraphics[draft]{kep/results/bifa_meandered.png}
-		\caption{felső rézréteg}
-	\end{subfigure}
-	\caption{A BIFA szimulált variációi.}
-	\label{fig:balun-kereszt}
+	\caption{A BIFA szimulált variációi közül a jobban használható változatok.}
+	\label{fig:bifa-variaciok}
 \end{figure}
